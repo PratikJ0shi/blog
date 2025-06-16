@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/p-desk/image/upload/v1742464330/pratiks-desk_ezpoln.webp">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y23GK3ZMF8"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'G-Y23GK3ZMF8');
-    </script>
-      <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon"
+    href="https://res.cloudinary.com/p-desk/image/upload/v1742464330/pratiks-desk_ezpoln.webp">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y23GK3ZMF8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y23GK3ZMF8');
+  </script>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Personal",
@@ -24,126 +26,276 @@
   "alternateName": ["pratiks_desk", "pratiks-desk", "pratiksdesk", "Pratik Joshi", "pratik joshi", "PRATIK JOSHI", "joshi", "pratik", "pratik site", "pratiks site", "pratik desk"]
 }
 </script>
-     <!-- Canonical URL -->
+  <!-- Canonical URL -->
   <link rel="canonical" href="https://pratiks-desk.site/" />
-    
-    <title>Pratiks-Blogs</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(45deg, #000000, #1c1c1c);
-            color: white;
-            text-align: center;
-            margin: 30px;
-        }
-        h2 {
-            color: #f1f1f1;
-        }
-        .blog-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            max-width: 980px;
-            margin: auto;
-        }
-        .blog-card {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            padding: 15px;
-            text-align: center;
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-        }
-        .blog-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px #7a5d95;
-        }
-        .blog-card img{
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-        .blog-card h3 {
-            margin: 10px 0;
-            color: #f8f8f8;
-        }
-        .blog-card p {
-            font-size: 14px;
-            color: #ddd;
-        }
-        .blog-button {
-            display: inline-block;
-            padding: 10px 15px;
-            margin-top: 10px;
-            background: linear-gradient(45deg, #ff416c, #ff4b2b);
-            color: white;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s, transform 0.2s;
-        }
-        .blog-button:hover {
-            background: linear-gradient(45deg, #ff4b2b, #ff416c);
-            transform: scale(1.05);
-        }
 
-        /*        blog posts style  */
-   
-/*         blog post style ends */
-        
-/* Responsive */
+  <title>Pratiks-Blogs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(45deg, #000000, #1c1c1c);
+      color: white;
+      text-align: center;
+      margin: 30px;
+    }
 
-       @media (max-width: 780px) {
-           body {
-                 margin: 2px;
-                 padding: 2px;
-        }
-          .blog-container, .recent-posts-container{
-                 max-width: 100%; /* Adjust width for smaller screens */
-       }
-          .blog-card {
-                padding: 10px;
-       }
+    h2 {
+      color: #f1f1f1;
+    }
+
+    .blog-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2.5rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .blog-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px #7a5d95;
+    }
+
+    .blog-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .blog-card h3 {
+      margin: 10px 0;
+      color: #f8f8f8;
+    }
+
+    .blog-card p {
+      font-size: 14px;
+      color: #ddd;
+    }
+
+    .blog-button {
+      display: inline-block;
+      padding: 10px 15px;
+      margin-top: 10px;
+      background: linear-gradient(45deg, #ff416c, #ff4b2b);
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .blog-button:hover {
+      background: linear-gradient(45deg, #ff4b2b, #ff416c);
+      transform: scale(1.05);
+    }
+
+    footer a{color: #fff; text-decoration: none; font-weight: bold;}
+
+    footer a:hover{color: yellow;}
+
+    /*        blog posts style  */
+    .recent-posts {
+      
+      background: transparent;
+      padding: 10px 1rem;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      border-collapse: separate;
+    }
+
+    .recent-posts h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .recent-posts-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      
+    }
+
+    .recent-post-item {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+      transition: all 0.3s ease;
+      padding: 2rem;
+      border-bottom: 1px solid #fc5a5a;
+      background-color: #1c1b1b;
+      border-radius: 10px;
+    }
+
+    .recent-post-item:hover{
+      transform: scale(1.05);
+
+    }
+
+    .recent-post-item .recent-post-info h3 a:hover {
+      color: #ffd700;
+    }
+
+    .recent-post-item img {
+      width: 280px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .recent-post-info {
+      flex: 1;
+    }
+
+    .recent-post-info .post-tag {
+      background: #ff69b4;
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 4px 8px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    .recent-post-info h3 {
+      margin: 0;
+      font-size: 1.4rem;
+      line-height: 1.4;
+    }
+
+    .recent-post-info h3 a {
+      text-decoration: none;
+      color: #ff69b4;
+      transition: color 0.3s ease;
+    }
+
+    .recent-post-info p {
+      font-size: 0.95rem;
+      color: #ccc;
+      margin: 0.6rem 0 1rem;
+      line-height: 1.5;
+    }
+
+    .recent-post-info a:last-of-type {
+      font-weight: 600;
+      font-size: 0.85rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+.recent-post-info {
+    color: #ff69b4;}
+
+    .recent-post-info a:last-of-type:hover {
+      color: #fff;
+    }
+
+    .recent-post-info .post-tag {
+  background: #ff69b4;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.recent-post-info .post-tag:hover {
+  background: #e84393;
 }
 
 
+    /*         blog post style ends */
 
+    /* Responsive */
 
+    @media (max-width: 780px) {
+      body {
+        margin: 2px;
+        padding: 2px;
+      }
 
-    </style>
+      .blog-container {
+        max-width: 100%;
+        /* Adjust width for smaller screens */
+      }
+
+      .blog-card {
+        padding: 10px;
+      }
+
+      .recent-post-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .recent-post-item img {
+        width: 100%;
+        height: auto;
+      }
+
+      .recent-post-info {
+        margin-top: 1rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-    <h2>🌟 My Blogs 🌟</h2>
+  <h2>🌟 My Blogs 🌟</h2>
 
-    <div class="blog-container">
-        <!-- Blog 1 -->
-        <div class="blog-card">
-            <img src="https://res.cloudinary.com/p-desk/image/upload/v1741816273/pratiks-desk-techbrary_nnkyd9.webp" alt="Tech Blog">
-            <h3>Techbrary</h3>
-            <p>Techbrary – Your ultimate library of code, tools, and tech! Stay updated, stay ahead.</p>
-            <a href="https://techbrary.pratiks-desk.site" target="_blank" class="blog-button">Read More</a>
-        </div>
+  <div class="blog-container">
+    <!-- Blog 1 -->
+    <div class="blog-card">
+      <img src="https://res.cloudinary.com/p-desk/image/upload/v1741816273/pratiks-desk-techbrary_nnkyd9.webp"
+        alt="Tech Blog">
+      <h3>Techbrary</h3>
+      <p>Techbrary – Your ultimate library of code, tools, and tech! Stay updated, stay ahead.</p>
+      <a href="https://techbrary.pratiks-desk.site" target="_blank" class="blog-button">Read More</a>
+    </div>
 
-        <!-- Blog 2 -->
-        <div class="blog-card">
-            <img src="https://res.cloudinary.com/p-desk/image/upload/v1741816272/pratiks-desk-bugdiary_tp2ogh.webp" alt="BudDiary Blog">
-            <h3>BugDiary</h3>
-            <p>BugDiary – Breaking codes, not spirits! Unraveling Selenium, automation, and software testing concepts—one bug at a time.</p>
-            <a href="https://bugdiary.pratiks-desk.site" target="_blank" class="blog-button">Read More</a>
-        </div>
+    <!-- Blog 2 -->
+    <div class="blog-card">
+      <img src="https://res.cloudinary.com/p-desk/image/upload/v1741816272/pratiks-desk-bugdiary_tp2ogh.webp"
+        alt="BudDiary Blog">
+      <h3>BugDiary</h3>
+      <p>BugDiary – Breaking codes, not spirits! Unraveling Selenium, automation, and software testing concepts—one bug
+        at a time.</p>
+      <a href="https://bugdiary.pratiks-desk.site" target="_blank" class="blog-button">Read More</a>
+    </div>
 
-        <!-- Blog 3 -->
-        <div class="blog-card">
-            <img src="https://res.cloudinary.com/p-desk/image/upload/v1742460554/pratiks-desk-letsprogramming_qbfwdl.webp" alt="AI Blog">
-            <h3>Lets-Programming</h3>
-            <p>Learn, code, and grow! Making programming fun and easy for everyone.</p>
-            <a href="https://lets-programming.pratiks-desk.site/" target="_blank" class="blog-button">Read More</a>
-        </div>
+    <!-- Blog 3 -->
+    <div class="blog-card">
+      <img src="https://res.cloudinary.com/p-desk/image/upload/v1742460554/pratiks-desk-letsprogramming_qbfwdl.webp"
+        alt="AI Blog">
+      <h3>Lets-Programming</h3>
+      <p>Learn, code, and grow! Making programming fun and easy for everyone.</p>
+      <a href="https://lets-programming.pratiks-desk.site/" target="_blank" class="blog-button">Read More</a>
+    </div>
 
-       <!--  <div class="blog-card">
+    <!--  <div class="blog-card">
             
             <img src="https://res.cloudinary.com/p-desk/image/upload/v1742460553/pratiks-desk-arogyam-dhansampada_nbqgf0.webp" alt="Web Dev Blog">
             <h3>Arogyam-Dhansampada</h3>
@@ -151,23 +303,27 @@
             <a href="https://arogyam-dhansampada.pratiks-desk.site" target="_blank" class="blog-button">Read More</a>
         </div> -->
 
-            </div>
-
-<!--     <section class="recent-posts-dark">
-  <h2>🆕 Recent Posts</h2>
-  <div class="recent-posts-container" id="recent-posts"></div>
-</section>
-
-<script src="/js/load-posts.js"></script>
- -->
+  </div>
 
 
-  <footer style="background: transparent; color: #fff; text-align: center; padding: 30px; font-family: Arial, sans-serif;">
+  <section class="recent-posts">
+    <h2>🆕 Recent Posts</h2>
+    <div class="recent-posts-container" id="recent-posts"></div>
+  </section>
+  <script src="https://blogs.pratiks-desk.site/js/load-posts.js"></script> <!-- your existing JS file -->
+
+
+
+
+  <footer
+    style="background: transparent; color: #fff; text-align: center; padding: 30px; font-family: Arial, sans-serif;">
     <div style="max-width: 900px; margin: auto;">
-        <p style="margin-top: 20px; font-size: 14px; opacity: 0.6;">&copy;
-        <a href="https://pratiks-desk.site" style="color: #fff; text-decoration: none; font-weight: bold;">Pratiks-Desk</a>.</p>
+      <p style="margin-top: 20px; font-size: 14px; opacity: 0.6;">
+        <a href="https://pratiks-desk.site">&copy; Pratiks-Desk</a>
+      </p>
     </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>
