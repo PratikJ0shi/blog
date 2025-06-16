@@ -4,13 +4,12 @@ fetch("https://blogs.pratiks-desk.site/data/recent-posts.json")
     const container = document.getElementById("recent-posts");
     posts.forEach(post => {
       const card = `
-        <div class="post-card">
+        <div class="recent-post-item">
           <img src="${post.image}" alt="${post.title}">
-          <div class="post-info">
-            <h3>${post.title}</h3>
-            <span class="blog-tag">${post.tag}</span>
+          <div class="recent-post-info">
+            <span class="post-tag">${post.tag}</span>
+            <h3><a href="${post.link}" target="_blank">${post.title}</a></h3>
             <p>${post.description}</p>
-            <a href="${post.link}" target="_blank">Read More →</a>
           </div>
         </div>
       `;
