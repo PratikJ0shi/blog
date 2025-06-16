@@ -7,7 +7,7 @@ fetch("https://blogs.pratiks-desk.site/data/recent-posts.json")
         <div class="recent-post-item">
           <img src="${post.image}" alt="${post.title}">
           <div class="recent-post-info">
-            <span class="post-tag">${post.tag}</span>
+            <a class="post-tag" href="${post.tagLink}" target="_blank">${post.tag}</a>
             <h3><a href="${post.link}" target="_blank">${post.title}</a></h3>
             <p>${post.description}</p>
           </div>
