@@ -101,17 +101,17 @@
        }
 }
 /*        blog posts style  */
-        .recent-posts-dark {
+       .recent-posts-dark {
   background-color: #121212;
   color: #f0f0f0;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .recent-posts-dark h2 {
   text-align: center;
   margin-bottom: 2rem;
+  font-size: 2rem;
   color: #ffffff;
-  font-size: 1.8rem;
 }
 
 .recent-posts-container {
@@ -119,52 +119,60 @@
   flex-direction: column;
   gap: 1.5rem;
   max-width: 900px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .recent-post-item {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   gap: 1rem;
-  background-color: #1f1f1f;
+  background-color: #1e1e1e;
   padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
   transition: transform 0.3s ease;
 }
 
 .recent-post-item:hover {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
 }
 
 .recent-post-item img {
   width: 90px;
   height: 90px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 10px;
+  flex-shrink: 0;
 }
 
 .recent-post-info {
   flex: 1;
+  min-width: 0;
 }
 
 .recent-post-info h3 {
   margin: 0;
   font-size: 1.1rem;
+  line-height: 1.4;
 }
 
 .recent-post-info h3 a {
-  color: #f9f9f9;
+  color: #f0f0f0;
   text-decoration: none;
 }
 
 .recent-post-info h3 a:hover {
-  color: #ffcc00;
+  color: #ffd700;
 }
 
 .recent-post-info p {
-  margin-top: 0.4rem;
+  margin: 0.3rem 0 0;
   font-size: 0.9rem;
   color: #ccc;
+  line-height: 1.4;
 }
 
 .post-tag {
@@ -173,10 +181,30 @@
   color: #fff;
   padding: 2px 6px;
   border-radius: 4px;
+  margin-bottom: 0.4rem;
   display: inline-block;
-  margin-bottom: 0.3rem;
-  letter-spacing: 0.5px;
 }
+
+/* Mobile Responsive */
+@media screen and (max-width: 600px) {
+  .recent-post-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .recent-post-item img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin-bottom: 0.8rem;
+  }
+
+  .recent-post-info {
+    padding: 0;
+  }
+}
+
 
 /*         blog post style ends */
 
