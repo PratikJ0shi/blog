@@ -101,24 +101,26 @@
        }
 }
 /*        blog posts style  */
-       .recent-posts-dark {
+      .recent-posts-dark {
   background-color: #121212;
   color: #f0f0f0;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
+  border-top: 1px solid #333;
+  margin-top: 3rem;
 }
 
 .recent-posts-dark h2 {
   text-align: center;
   margin-bottom: 2rem;
-  font-size: 2rem;
   color: #ffffff;
+  font-size: 1.8rem;
 }
 
 .recent-posts-container {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  max-width: 900px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 1rem;
   box-sizing: border-box;
@@ -129,22 +131,22 @@
   flex-direction: row;
   align-items: flex-start;
   gap: 1rem;
-  background-color: #1e1e1e;
+  background-color: #1f1f1f;
   padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.05);
   transition: transform 0.3s ease;
 }
 
 .recent-post-item:hover {
-  transform: translateY(-2px);
+  transform: translateY(-4px);
 }
 
 .recent-post-item img {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 8px;
   flex-shrink: 0;
 }
 
@@ -156,23 +158,21 @@
 .recent-post-info h3 {
   margin: 0;
   font-size: 1.1rem;
-  line-height: 1.4;
 }
 
 .recent-post-info h3 a {
-  color: #f0f0f0;
+  color: #f9f9f9;
   text-decoration: none;
 }
 
 .recent-post-info h3 a:hover {
-  color: #ffd700;
+  color: #ffcc00;
 }
 
 .recent-post-info p {
-  margin: 0.3rem 0 0;
+  margin-top: 0.4rem;
   font-size: 0.9rem;
   color: #ccc;
-  line-height: 1.4;
 }
 
 .post-tag {
@@ -181,12 +181,13 @@
   color: #fff;
   padding: 2px 6px;
   border-radius: 4px;
-  margin-bottom: 0.4rem;
   display: inline-block;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.5px;
 }
 
-/* Mobile Responsive */
-@media screen and (max-width: 600px) {
+/* Responsive */
+@media screen and (max-width: 768px) {
   .recent-post-item {
     flex-direction: column;
     align-items: center;
@@ -195,13 +196,12 @@
 
   .recent-post-item img {
     width: 100%;
-    height: auto;
     max-width: 300px;
-    margin-bottom: 0.8rem;
+    height: auto;
   }
 
   .recent-post-info {
-    padding: 0;
+    padding: 0.5rem 0;
   }
 }
 
