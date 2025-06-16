@@ -101,55 +101,82 @@
        }
 }
 /*        blog posts style  */
-        .recent-posts {
-  padding: 2rem;
-  background-color: #f8f9fa;
-}
-.posts-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
-}
-.post-card {
-  width: 300px;
-  border-radius: 10px;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
-.post-card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-}
-.post-info {
-  padding: 1rem;
-}
-.blog-tag {
-  background: #333;
-  color: white;
-  padding: 2px 6px;
-  font-size: 0.75rem;
-  border-radius: 4px;
-  margin-bottom: 5px;
-  display: inline-block;
-}
-.post-info h3 {
-  font-size: 1.1rem;
-  margin: 0.5rem 0;
-}
-.post-info p {
-  font-size: 0.9rem;
-  color: #555;
-}
-.post-info a {
-  display: inline-block;
-  margin-top: 0.5rem;
-  font-weight: bold;
-  color: #007bff;
+        .recent-posts-dark {
+  background-color: #121212;
+  color: #f0f0f0;
+  padding: 3rem 1rem;
 }
 
+.recent-posts-dark h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+
+.recent-posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.recent-post-item {
+  display: flex;
+  gap: 1rem;
+  background-color: #1f1f1f;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.recent-post-item:hover {
+  transform: translateY(-4px);
+}
+
+.recent-post-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.recent-post-info {
+  flex: 1;
+}
+
+.recent-post-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.recent-post-info h3 a {
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+.recent-post-info h3 a:hover {
+  color: #ffcc00;
+}
+
+.recent-post-info p {
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.post-tag {
+  font-size: 0.75rem;
+  background: #333;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.5px;
+}
 
 /*         blog post style ends */
 
@@ -194,11 +221,13 @@
 
             </div>
 
-    <section class="recent-posts">
-  <h2>📝 Recent Blog Posts</h2>
-  <div id="recent-posts" class="posts-grid"></div>
+    <section class="recent-posts-dark">
+  <h2>🆕 Recent Posts</h2>
+  <div class="recent-posts-container" id="recent-posts"></div>
 </section>
+
 <script src="/js/load-posts.js"></script>
+
 
 
   <footer style="background: transparent; color: #fff; text-align: center; padding: 30px; font-family: Arial, sans-serif;">
