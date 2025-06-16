@@ -35,11 +35,12 @@
       font-family: Arial, sans-serif;
       background: linear-gradient(45deg, #000000, #1c1c1c);
       color: white;
-      text-align: center;
+      /* text-align: center; */
       margin: 30px;
     }
 
-    h2 {
+    h1 {
+      text-align: center;
       color: #f1f1f1;
     }
 
@@ -49,6 +50,11 @@
       gap: 2.5rem;
       max-width: 1100px;
       margin: auto;
+      border-left: 1.5px solid #96fbc4;
+      /* border-bottom: 1.5px solid #96fbc4;
+      padding-bottom: 2rem; */
+      padding-left: 2rem;
+      border-radius: 1px;
     }
 
     .blog-card {
@@ -100,13 +106,19 @@
       transform: scale(1.05);
     }
 
-    footer a{color: #fff; text-decoration: none; font-weight: bold;}
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-    footer a:hover{color: yellow;}
+    footer a:hover {
+      color: yellow;
+    }
 
     /*        blog posts style  */
     .recent-posts {
-      
+
       background: transparent;
       padding: 10px 1rem;
       color: #fff;
@@ -114,20 +126,24 @@
       border-collapse: separate;
     }
 
-    .recent-posts h2 {
-      text-align: center;
+    .recent-posts h1 {
       font-size: 2rem;
-      margin-bottom: 2.5rem;
+      margin-bottom: 2rem;
     }
 
     .recent-posts-container {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 10px;
+      padding: 5px;
       display: flex;
       flex-direction: column;
-      gap: 3rem;
-      
+      gap: 1.5rem;
+      border-left: 1.5px solid #f9f586;
+      /* border-bottom: 1.5px solid #96fbc4;
+      padding-bottom: 2rem; */
+      padding-left: 2rem;
+      border-radius: 1px;
+
     }
 
     .recent-post-item {
@@ -135,14 +151,14 @@
       gap: 2rem;
       align-items: flex-start;
       transition: all 0.3s ease;
-      padding: 2rem;
+      padding: 1.5rem;
       border-bottom: 1px solid #fc5a5a;
       background-color: #1c1b1b;
       border-radius: 10px;
     }
 
-    .recent-post-item:hover{
-      transform: scale(1.05);
+    .recent-post-item:hover {
+      transform: scale(1.02);
 
     }
 
@@ -160,18 +176,6 @@
 
     .recent-post-info {
       flex: 1;
-    }
-
-    .recent-post-info .post-tag {
-      background: #ff69b4;
-      color: #fff;
-      font-size: 0.7rem;
-      font-weight: 600;
-      padding: 4px 8px;
-      border-radius: 4px;
-      display: inline-block;
-      margin-bottom: 10px;
-      letter-spacing: 0.5px;
     }
 
     .recent-post-info h3 {
@@ -199,30 +203,32 @@
       text-decoration: none;
       transition: color 0.3s ease;
     }
-.recent-post-info {
-    color: #ff69b4;}
+
+    .recent-post-info {
+      color: #ff69b4;
+    }
 
     .recent-post-info a:last-of-type:hover {
       color: #fff;
     }
 
     .recent-post-info .post-tag {
-  background: #ff69b4;
-  color: #fff;
-  font-size: 0.7rem;
-  font-weight: 600;
-  padding: 4px 8px;
-  border-radius: 4px;
-  display: inline-block;
-  margin-bottom: 10px;
-  letter-spacing: 0.5px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
+      background: #ff69b4;
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 4px 8px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
 
-.recent-post-info .post-tag:hover {
-  background: #e84393;
-}
+    .recent-post-info .post-tag:hover {
+      background: #e84393;
+    }
 
 
     /*         blog post style ends */
@@ -247,7 +253,7 @@
       .recent-post-item {
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        /* text-align: center; */
       }
 
       .recent-post-item img {
@@ -264,7 +270,7 @@
 
 <body>
 
-  <h2>🌟 My Blogs 🌟</h2>
+  <h1>🌟 My Blogs 🌟</h1>
 
   <div class="blog-container">
     <!-- Blog 1 -->
@@ -307,7 +313,7 @@
 
 
   <section class="recent-posts">
-    <h2>🆕 Recent Posts</h2>
+    <h1>🆕 Recent Posts</h1>
     <div class="recent-posts-container" id="recent-posts"></div>
   </section>
   <script src="https://blogs.pratiks-desk.site/js/load-posts.js"></script> <!-- your existing JS file -->
