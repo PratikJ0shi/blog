@@ -1,4 +1,4 @@
-fetch("https://blogs.pratiks-desk.site/data/recent-posts.json")
+fetch("https://blogs.pratiks-desk.in/data/recent-posts.json")
   .then(response => response.json())
   .then(posts => {
     const container = document.getElementById("recent-posts");
