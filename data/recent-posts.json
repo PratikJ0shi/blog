@@ -2,35 +2,35 @@
    {
     "title": "First Selenium Program: Launching a Browser using Java",
     "description": "Learn how to launch a browser with Selenium using Java. Perfect for beginners in web automation testing. Start your automated testing journey today!",
-    "link": "https://lets-programming.pratiks-desk.site/first-selenium-program-launching-a-browser-using-java",
+    "link": "https://lets-programming.pratiks-desk.in/first-selenium-program-launching-a-browser-using-java",
     "image": "https://res.cloudinary.com/p-desk/image/upload/v1750141596/First_Selenium_Program_Launching_a_Browser_using_Java_gms6d7.png",
     "tag": "Let's Programming",
-    "tagLink": "https://lets-programming.pratiks-desk.site/"
+    "tagLink": "https://lets-programming.pratiks-desk.in/"
   },
   {
     "title": "Jira Project Management Tool",
     "description": "JIRA is a project management and issue-tracking tool developed by Atlassian, widely used for Agile software development, defect tracking, and workflow management. It helps teams collaborate, organize tasks, and track progress efficiently.",
-    "link": "https://techbrary.pratiks-desk.site/jira-project-management-tool",
+    "link": "https://techbrary.pratiks-desk.in/jira-project-management-tool",
     "image": "https://res.cloudinary.com/p-desk/image/upload/v1750057004/jira_project_management_tool_mafo9r.png",
     "tag": "Techbrary",
-    "tagLink": "https://techbrary.pratiks-desk.site"
+    "tagLink": "https://techbrary.pratiks-desk.in"
   },
   {
     "title": "Types of Software Testing",
     "description": "🧪 Types of Software Testing – Categorized by Aspects ✅ By Execution Approach 🔹 Manual Testing Testing performed manually without automation tools. Testers execute test cases, observe behavior, and report bugs. Best suited for exploratory, usabilit... ",
-    "link": "https://bugdiary.pratiks-desk.site/types-of-software-testing",
+    "link": "https://bugdiary.pratiks-desk.in/types-of-software-testing",
     "image": "https://res.cloudinary.com/p-desk/image/upload/v1750057429/Types_of_Software_Testing_m1ixvu.png",
     "tag": "Bugdiary",
-    "tagLink": "https://bugdiary.pratiks-desk.site"
+    "tagLink": "https://bugdiary.pratiks-desk.in"
 
   },
   {
     "title": "Top 10 Software Testing Terms Every Beginner Should Know",
     "description": "Starting your journey in software testing? The world of QA (Quality Assurance) can seem overwhelming at first, but learning the common terminology is a great first step. Here are the top 10 must-know terms for every beginner: 1. Test Case A test cas...",
-    "link": "https://bugdiary.pratiks-desk.site/top-10-software-testing-terms-every-beginner-should-know",
+    "link": "https://bugdiary.pratiks-desk.in/top-10-software-testing-terms-every-beginner-should-know",
     "image": "https://res.cloudinary.com/p-desk/image/upload/v1750057263/Software_Testing_Terms_nufesd.png",
     "tag": "Bugdiary",
-    "tagLink": "https://bugdiary.pratiks-desk.site"
+    "tagLink": "https://bugdiary.pratiks-desk.in"
 
   }
 ]
